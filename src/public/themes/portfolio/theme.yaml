@@ -1,0 +1,11 @@
+name: Portfolio
+description: 'Custom portfolio theme'
+author: 'Stefan Janssen'
+homepage: 'https://www.stefanjanssen.nl'
+code: ''
+form:
+    fields:
+        site_name:
+            label: Site name
+            comment: The website name as it should appear on the front-end
+            default: Stefan Janssen
