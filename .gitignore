@@ -1,4 +1,6 @@
 #octoberCMS 
+**/bootstrap/
+**/modules/
 **/storage/
 **/vendor/
 **/install_files/
