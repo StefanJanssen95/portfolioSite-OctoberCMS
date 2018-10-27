@@ -1,0 +1,12 @@
+description = "A single navigation item"
+==
+{% if ''|page == link %}
+	<li class="nav__item nav__item--selected">
+{% else %}
+	<li class="nav__item">
+{% endif %}
+	<a href="{{ link }}" class="nav__tab">
+		<i class="fa fa-2x fa-{{ icon }}"></i>
+		<span class="nav__item-label">{{ title }}</span>
+	</a>
+</li>
