@@ -1,5 +1,13 @@
 #octoberCMS 
+**/bootstrap/
+**/modules/
 **/storage/
 **/vendor/
 **/install_files/
 **/bower_components/
+**/public/.htaccess
+**/public/artisan
+**/public/index.php
+
+#IDEs
+**/.vscode/
