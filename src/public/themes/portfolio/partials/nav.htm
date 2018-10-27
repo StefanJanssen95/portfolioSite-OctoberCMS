@@ -1,0 +1,27 @@
+==
+<?php
+function onStart(){
+    $this['pages'] = [
+        [
+            "name" => "home",
+            "title" => "About Me",
+            "icon" => "user"
+        ],
+        [
+            "name" => "projects",
+            "title" => "Some other page",
+            "icon" => "user"
+        ]
+    ];
+}
+?>
+==
+<nav class="nav no-select">
+    {% partial "nav/navHeader" %}
+    <ul class="nav__list">
+        {% for page in pages %}
+            {% partial "nav/navItem" icon=page.icon link=page.name|page title=page.title %}
+        {% endfor %}
+    </ul>
+    {% partial "nav/navFooter" %}
+</nav>
