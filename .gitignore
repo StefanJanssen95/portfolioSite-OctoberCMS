@@ -5,9 +5,11 @@
 **/vendor/
 **/install_files/
 **/bower_components/
+**/plugins/
 **/public/.htaccess
 **/public/artisan
 **/public/index.php
 
 #IDEs
 **/.vscode/
+**/.idea/

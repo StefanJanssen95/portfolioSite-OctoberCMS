@@ -1,4 +1,11 @@
 ==
+<?php
+function onStart()
+{
+    $this->addCss(['assets/scss/app.scss']);
+}
+?>
+==
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +15,18 @@
     <title>{{ this.theme.site_name }} - {{ this.page.title }} </title>
 
     {% styles %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 
 {% partial 'nav' %}
-    <main>
+<div class="container">
+    <main class="page">
         {% partial 'header' title=this.page.title %}
     
         {% page %}
     </main>
-
+</div>
     {% scripts %}
 </body>
 </html>

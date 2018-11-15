@@ -1,0 +1,32 @@
+.post-list{
+	display: flex;
+	flex-direction: column;
+}
+
+.post-item{
+	--spacing: 12px;
+	display: flex;
+	padding: var(--spacing) 0;
+	border-bottom: 1px solid #454545;
+
+	&__image{
+		max-height: 6em;
+		margin-right: var(--spacing);
+	}
+
+	&__header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__summary{
+		max-height: 6em;
+		overflow: hidden;
+	}
+
+	&__footer{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}

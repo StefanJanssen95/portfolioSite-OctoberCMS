@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 0.625rem;
+}
+
+body{
+	overflow-x: hidden;
+	@include roboto($regular, 1.5rem);
+}
+
+.no-select{
+	user-select: none;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.container{
+	padding: 20px;
+	margin-left: $menu-width;
+	width: calc( 100vw - $menu-width );
+	min-height: 100vh;
+	background-color: var(--pageColorBackground);
+	overflow-y: unset;
+
+	display: flex;
+	justify-content: center;
+
+	@include mq("tablet-small"){
+		width: 100vw;
+		margin: 0 0 80px;
+		min-height: calc( 100vh - 80px );
+	}
+}
+
+.page{
+	max-width: 1000px;
+	padding: 20px;
+}

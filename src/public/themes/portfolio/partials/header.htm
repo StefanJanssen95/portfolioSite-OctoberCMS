@@ -1,7 +1,13 @@
 description = "Page Header"
 ==
+<?php
+function onStart(){
+	$this["pageIcon"] = $this->viewBag["pageIcon"];
+}
+?>
+==
 <header class="page-header">
-	<i class="fa fa-2x fa-{{ icon }} page-header__icon"></i>
+	<i class="fas fa-2x fa-{{ pageIcon }} page-header__icon"></i>
 	<div class="ribbon">
 		<span class="ribbon--before"></span>
 		<h1>{{ title }}</h1>
